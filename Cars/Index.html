@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Car</title>
+</head>
+<body>
+
+   
+
+    <!-- <script>
+        var newElement = document.createElement('li');
+
+        newElement.classList.add('option-item')
+
+        newElement.innerText = 'service';
+
+        var get = document.getElementById('menu-option');
+
+        get.append(newElement);
+    </script> -->
+    <header>
+        <div class="head-area">
+            <div class="head-container-design"></div>
+            <div class="head-container">
+                <div class="head-content">
+                    <div class="logo1">
+                    </div>
+                    <div class="menu">
+                        <ul class="menu-option" id="menu-option">  
+                            <li class="option-item">home</li>
+                            <li class="option-item">discover</li>
+                            <li class="option-item">branding</li>
+                        </ul>
+                    </div>
+                    <div class="logo2">
+                        <p class="logo-name">t-Cars</p>
+                    </div>
+                    <div class="search-area">
+                        <i class="fa fa-search search-icon"></i>
+                        <input type="text" class="search" placeholder="Search. . .">
+                    </div>
+                    <div class="icons" id="icons">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-linkedin"></i>
+                    </div>
+                    <div class="follow-btn">
+                        <p class="follow">follow</p>
+                    </div>
+                    <div class="menu-btn">
+                        <input type="checkbox" id="menu-bar">
+                        <label for="menu-bar">
+                            <i class="fa fa-bars bars"></i>
+                            <i class="fa fa-times cancel"></i>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <main>
+        <section>
+            <div class="slider-area">
+                <div class="slider-container">
+                    <div class="slider-content">
+                        <div class="slider-content-text">
+                            <p class="slider-heading" id="slider-heading">Nothing beats</p>
+                            <p class="slider-sub-heading">the first drive in your</p>
+                            <p class="slider-heading" id="slider-heading">new car</p>
+                            <p class="slider-text">There’s a little magic when you turn the key in the ignition. These ’50s and ‘60s <br>
+                                               cars from a museum in a small Indiana town show that every day was a celebration of <br>
+                                               great music, open roads, and handmade style. Read more at: <br>
+                                               https://thrivemyway.com/car-captions- <br>
+                                               for-instagram
+                            </p>
+                        </div>
+                        <div class="slider-content-img">
+                            <div class="slider-frame1">
+                                <img class="slider-img1" src="Car-image/card-car3.jpeg" alt="">
+                            </div>
+                            <div class="slider-frame2">
+                                <img class="slider-img2" src="Car-image/card-car2.jpeg" alt="">
+                            </div>
+                            <div class="slider-frame3">
+                                <img class="slider-img3" src="Car-image/card-car1.jpeg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    </header>
+    <div class="bg2">
+    </div>
+
+    <script src="car.js"></script>
+</body>
+</html>
+<style>
+    *
+    {
+        margin: 0%;
+        padding: 0%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-decoration: none;
+        text-transform: capitalize;
+    }
+    :root
+    {
+        --bg-color: 
+    }
+    .menu-btn
+    {
+        display: none;
+    }
+    #menu-bar
+    {
+        display: none;
+    }
+    .cancel
+    {
+        display: none;
+    }
+    label i
+    {
+        padding: 1ex 1ex;
+        cursor: pointer;
+        color: rgb(21, 117, 124);
+    }
+    #menu-bar:checked ~ label .bars
+    {
+        display: none;
+    }
+    #menu-bar:checked ~ label .cancel
+    {
+        display: block;
+    }
+    #menu-bar:checked ~ .option ul li
+    {
+        display: block;
+    }
+    header
+    {
+        width: 100%;
+        height: 74.5ex;
+        background-image: url(Car-image/l2-car-bg.avif);
+        background-size: 100% 100%;
+    }
+    .bg2
+    {
+        width: 100%;
+        height: 74ex;
+        background-color: rgb(7, 29, 31);
+        display: none;
+    }
+    .head-area
+    {
+        width: 100%;
+        height: 8ex;
+        display: grid;
+        place-items: center;
+    }
+    .head-container
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 6ex;
+        /* background-color: rgb(146, 144, 144); */
+        transform: translateY(-4ex);
+        border-radius: 3ex;
+        z-index: 0;
+    }
+    .head-container-design
+    {
+        width: 90%;
+        height: 6ex;
+        background-color: rgb(29, 28, 28);
+        opacity: 0.5;
+        border-radius: 4ex;
+        transform: translateY(2ex);
+    }
+    .head-content
+    {
+        opacity: none;
+        z-index: 10;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 99%;
+    }
+    .logo1
+    {
+        height: 5ex;
+        width: 5ex;
+        background-image: url(Car-image/car-bg.jpg);
+        background-size: 100% 100%;
+        border-radius: 3ex;
+        border: 0.1ex solid white;
+        opacity: unset;
+        z-index: 10;
+        transition: all 0.7s;
+        cursor: pointer;
+    }
+    .logo1:hover
+    {
+        scale: 1.5;
+    }
+     .menu-option
+    {
+        display: flex;
+        list-style: none;
+    }
+    .option-item
+    {
+        padding: 1ex 2ex;
+        border-radius: 5ex;
+        font-weight: 550;
+        color: rgb(109, 181, 184);
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+    .option-item:hover
+    {
+        color: white;
+        background-color: rgb(13, 60, 63);
+    }
+    .submenu
+    {
+        display: grid;
+        place-items: center;
+        position: absolute;
+        width: 14ex;
+        height: auto;
+        /* background-color: rgb(79, 92, 92); */
+        transform: translateY(1.5ex);
+    }
+    .submenu-option
+    {
+        list-style: none;
+        background-color: rgb(23, 56, 56);
+    }
+    .item
+    {
+        padding: 1ex 2ex;
+        border-top: 0.2ex solid black;
+        color: black;
+    }
+    .logo-name
+    {
+        font-size: 5ex;
+        color: rgb(5, 110, 117);
+        font-weight: 470;
+        cursor: pointer;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .logo-name:hover
+    {
+        color: white;
+    }
+    .search
+    {
+        padding: 2ex 10ex;
+        border-radius: 5ex;
+        border: none;
+        background-image: url(Car-image/l5-bg.jpeg);
+        background-size: cover;
+        background-color: white;
+        color: white;
+        font-size: 0.95vw;
+    }
+    .search-icon
+    {
+        display: none;
+    }
+    .icons
+    {
+        border-left: 0.4ex solid rgb(14, 74, 85);
+    }
+    .icons i
+    {
+        color: rgb(88, 157, 160);
+        font-size: 2ex;
+        padding: 1ex 1ex;
+    }
+    .icons i:hover
+    {
+        color: white;
+    }
+    .follow-btn
+    {
+        height: 4ex;
+        width: 15ex;
+        background-color: rgb(133, 136, 136);
+        border-radius: 2ex;
+        display: grid;
+        place-items: center;
+        border: 0.2ex solid rgb(13, 60, 63);
+        transition: all 0.7s;
+    }
+    .follow-btn:hover
+    {
+        background-color: rgb(13, 60, 63);
+        color: white;
+    }
+    .follow
+    {
+        color: rgb(9, 68, 78);
+        font-weight: bold;
+    }
+    .follow-btn:hover .follow
+    {
+        color: white;
+    }
+    .slider-area
+    {
+        width: 100%;
+        height: 64ex;
+        padding-top: 3ex;
+        display: grid;
+        place-items: center;
+    }
+    .slider-container
+    {
+        width: 96%;
+        height: 55ex;
+    }
+    .slider-content
+    {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .slider-content
+    {
+        display: flex;
+    }
+    .slider-heading
+    {
+        font-size: 5vw;
+        color: white;
+        font-weight: bolder;
+        line-height: 4ex;
+    }
+    .slider-sub-heading
+    {
+        font-size: 4vw;
+        color: rgb(2, 40, 43);
+        font-weight: bold;
+        line-height: 2ex;
+    }
+    .slider-text
+    {
+        color: white;
+        font-size: 1.2vw
+    }
+    .slider-content-img
+    {
+        display: flex;
+        justify-content: space-between;
+        width: 80ex;
+        padding-top: 7ex;
+    }
+    .slider-frame1
+    {
+        width: 26ex;
+        height: 50ex;
+        overflow: hidden;
+        border-radius: 5ex;
+        border: 0.3ex solid white;
+    }
+    .slider-img1
+    {
+        width: 26ex;
+        height: 50.5ex;
+        transition: all 0.7s;
+        cursor: pointer;
+    }
+    .slider-img1:hover
+    {
+        scale: 1.2;
+    }
+    .slider-frame2
+    {
+        width: 26ex;
+        height: 50ex;
+        overflow: hidden;
+        border-radius: 5ex;
+        border: 0.3ex solid white;
+        margin-top: -7ex;
+    }
+    .slider-img2
+    {
+        width: 26ex;
+        height: 50.5ex;
+        transition: all 0.7s;
+        cursor: pointer;
+    }
+    .slider-img2:hover
+    {
+        scale: 1.2;
+    }
+    .slider-frame3
+    {
+        width: 26ex;
+        height: 50ex;
+        overflow: hidden;
+        border-radius: 5ex;
+        border: 0.3ex solid white;
+    }
+    .slider-img3
+    {
+        width: 26ex;
+        height: 50.5ex;
+        transition: all 0.7s;
+        cursor: pointer;
+    }
+    .slider-img3:hover
+    {
+        scale: 1.2;
+    }
+    @media (max-width: 84ex)
+    {
+        header
+        {
+            height: 70ex;
+        }
+        .bg2
+        {   
+            height: 150ex;
+            display: block;
+        }
+        .menu-btn
+        {
+            display: block;
+        }
+        /* .logo1
+        {
+            width: 4ex;
+            height: 4ex;
+        } */
+        /* .logo-name
+        {
+            font-size: 5ex;
+        } */
+        .search
+        {
+            display: none;
+        }
+        .search-icon
+        {
+            display: block;
+            color: rgb(88, 157, 160);
+            font-size: 3ex;
+        }
+        .menu
+        {
+            display: none;
+        }
+        .icons
+        {
+            height: 3ex;  
+        }
+        .icons i
+        {
+            padding: 0.5ex 0.5ex;
+        }
+        .slider-content
+        {
+            display: inline-block;
+        }
+        .follow-btn
+        {
+            width: 10ex;
+        }
+        .slider-heading
+        {
+            font-size: 5ex;
+        } 
+        .slider-sub-heading
+        {
+            font-size: 4ex;
+        }
+        .slider-text
+        {
+            font-size: 1.45ex;
+        }
+        .slider-content-img
+        {
+            display: inline-block;
+            margin-left: 3.5ex;
+
+        } 
+        .slider-frame1
+        {
+            width: 50ex;
+        }
+        .slider-img1
+        {
+            width: 50ex;
+        }
+        .slider-frame2
+        {
+            width: 50ex;
+            margin-top: 2ex;
+        }
+        .slider-img2
+        {
+            width: 50ex;
+        }
+        .slider-frame3
+        {
+            width: 50ex;
+            margin-top: 2ex;
+        }
+        .slider-img3
+        {
+            width: 50ex;
+        }
+    }
+</style>
